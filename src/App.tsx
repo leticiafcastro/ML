@@ -8,7 +8,6 @@ import { QuickMoveModal } from './components/QuickMoveModal';
 import {
   CheckCheck,
   RotateCcw,
-  BookOpen,
   Sparkles,
   ArrowDownCircle,
 } from 'lucide-react';
@@ -125,9 +124,6 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3 w-full sm:w-auto">
-            <div className="p-2 rounded-xl bg-[#F0A328] text-[#132A4E] shadow-xs shrink-0">
-              <BookOpen className="w-5 h-5" />
-            </div>
             <div>
               <h1 className="text-base sm:text-xl font-bold tracking-tight leading-tight text-white">
                 Modelo Lógico - Dispensação de medicamentos
