@@ -1,0 +1,6 @@
+{
+  "name": "Jogo do Modelo Lógico",
+  "description": "Jogo de classificação de componentes do Modelo Lógico para Dispensação de Medicamentos na Assistência Farmacêutica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
