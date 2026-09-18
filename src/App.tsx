@@ -172,22 +172,29 @@ export default function App() {
         {!isVerified && (
           <div
             id="instruction-tip"
-            className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 p-4 rounded-2xl bg-[#FFFFFF] border border-[#132A4E]/20 shadow-xs text-[14px] text-[#2D3748]"
+            className="flex flex-col gap-3.5 p-4 sm:p-5 rounded-2xl bg-[#FFFFFF] border border-[#132A4E]/20 shadow-xs text-[14px] text-[#2D3748]"
           >
-            <div className="flex items-center gap-3">
-              <div className="p-2 rounded-xl bg-[#F0A328]/15 text-[#D96B17] shrink-0">
+            <div className="flex items-start gap-3">
+              <div className="p-2 rounded-xl bg-[#F0A328]/15 text-[#D96B17] shrink-0 mt-0.5">
                 <Sparkles className="w-4 h-4" />
               </div>
-              <p className="text-[14px] leading-relaxed">
-                Como jogar: Arraste os cards do rodapé para uma das 5 colunas no topo. Ao terminar, clique em "Verificar Respostas".
-              </p>
+              <div className="space-y-1.5 flex-1">
+                <p className="text-[14px] leading-relaxed text-[#2D3748]">
+                  Como jogar: Arraste os cards do rodapé para uma das 5 colunas no topo. Ao terminar, clique em "Verificar Respostas".
+                </p>
+                <p className="text-[14px] leading-relaxed text-[#2D3748]">
+                  <strong className="font-bold text-[#2D3748]">Está no celular?</strong> Se tiver dificuldade para arrastar, toque na caixinha (card) desejada e selecione a coluna para onde ela deve ir.
+                </p>
+              </div>
             </div>
 
-            <div className="flex items-center gap-2 shrink-0 font-medium text-xs text-[#132A4E]/70 bg-[#132A4E]/5 px-3 py-1.5 rounded-xl border border-[#132A4E]/10">
-              <ArrowDownCircle className="w-4 h-4 text-[#D96B17]" />
-              <span>
-                {placedCount} de {RAW_ITEMS.length} itens posicionados
-              </span>
+            <div className="pt-2.5 border-t border-[#132A4E]/10 flex items-center justify-start sm:justify-end">
+              <div className="flex items-center gap-2 shrink-0 font-medium text-xs text-[#132A4E]/70 bg-[#132A4E]/5 px-3 py-1.5 rounded-xl border border-[#132A4E]/10">
+                <ArrowDownCircle className="w-4 h-4 text-[#D96B17]" />
+                <span>
+                  {placedCount} de {RAW_ITEMS.length} itens posicionados
+                </span>
+              </div>
             </div>
           </div>
         )}
